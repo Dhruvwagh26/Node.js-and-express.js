@@ -1,15 +1,11 @@
-const amount = 9;
+// Modules - Encapsulated Code (which only shares minimum)
+//CommonJS, every file is module (by default) in node.js
 
-if (amount < 10) {
-  console.log("small number");
-} else {
-  console.log("Large number");
-}
-
-console.log(`hey it's my first mode app!!!`);
-
-
-//For execution on terminal - install node.js and then write the given commands on the terminal to check and initialize node successfully.
-// for checking is node is installed successfuly >node --version
-// for initializing node application (here app.js)
-// > node app.js
+const names = require("./4-names");
+const sayHi = require("./5-utils");
+const data = require("./6-alternative-flavor");
+console.log(data);
+// console.log(names);
+sayHi("dhruv");
+sayHi(names.dhruv1);
+sayHi(names.dhruv3);
